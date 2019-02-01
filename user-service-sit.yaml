@@ -3,6 +3,18 @@ server:
 spring:
   application:
     name: user-service
+  datasource:
+    hikari:
+      idle-timeout: 60000
+      maximum-pool-size: 10
+      minimum-idle: 10
+      connection-timeout: 20000
+      connection-test-query: SELECT 1
+      pool-name: HikariPool
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/ibp?useSSL=false&useUnicode=true&characterEncoding=utf-8&verifyServerCertificate=false
+    username: root
+    password: 123456
 
 #启用监控
 management:
