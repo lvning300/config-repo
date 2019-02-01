@@ -16,6 +16,17 @@ spring:
     username: root
     password: 123456
 
+
+mapper:
+  mappers:
+    - tk.mybatis.mapper.common.Mapper
+  notEmpty: false
+  identity: MYSQL
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath*:META-INF/mapper/**/*.xml
+
 #启用监控
 management:
   endpoints:
