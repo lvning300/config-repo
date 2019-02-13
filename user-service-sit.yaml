@@ -27,6 +27,12 @@ mybatis:
     map-underscore-to-camel-case: true
   mapper-locations: classpath*:META-INF/mapper/**/*.xml
 
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
 #启用监控
 management:
   endpoints:
