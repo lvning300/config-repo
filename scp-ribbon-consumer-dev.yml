@@ -2,7 +2,7 @@ server:
   port: 7001
 spring:
   application:
-    name: ribbon-consumer
+    name: scp-ribbon-consumer
 
 eureka:
   instance:
