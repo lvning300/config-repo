@@ -30,7 +30,14 @@ mybatis-plus:
   type-aliases-package: com.lv.cloud.entity
   configuration:
     map-underscore-to-camel-case: true
-
   global-config:
     banner: false
-    field-strategy: 2
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: localhost:${server.port}
+    prefer-ip-address: true # 开启以Ip+端口多方式显示Eureka界面
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:9009/eureka/,http://peer2:9010/eureka/
