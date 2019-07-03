@@ -1,3 +1,4 @@
+
 #启用监控
 management:
   endpoints:
