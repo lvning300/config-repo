@@ -1,5 +1,3 @@
-encrypt:
-  key: mysecret
 #启用监控
 management:
   endpoints:
