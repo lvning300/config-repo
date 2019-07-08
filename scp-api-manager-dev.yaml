@@ -16,7 +16,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mp?useSSL=false&useUnicode=true&characterEncoding=utf-8&verifyServerCertificate=false&allowMultiQueries=true
     username: root
-    password: 123456
+    password: {cipher}205da5258c553ff62d14d9c875d9ca8f2b8c4ae36240fc0f06642a671ca6f445
 
 
 # Logger Config
