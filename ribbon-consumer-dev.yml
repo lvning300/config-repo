@@ -1,0 +1,26 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: ribbon-consumer
+  profiles:
+    active: ${profile}
+  cloud:
+    config:
+      uri: ${config.uri}
+
+# 开启监控指标
+management:
+  endpoint:
+    health:
+      show-details: always
+
+# 配置Eureka注册服务
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://localhost:1110/eureka/
+      defaultZone: http://peer1:9009/eureka/,http://peer2:9010/eureka/
+  instance:
+    prefer-ip-address: true
+    appname: ribbon-consumer
