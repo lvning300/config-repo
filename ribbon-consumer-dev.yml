@@ -27,4 +27,4 @@ eureka:
 
 logging:
   level:
-    com.lv.cloud: debug
+    com.ln.example: debug  #com.ln.example
