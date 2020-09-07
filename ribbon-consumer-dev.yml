@@ -24,3 +24,7 @@ eureka:
   instance:
     prefer-ip-address: true
     appname: ribbon-consumer
+
+logging:
+  level:
+    com.lv.cloud: debug
