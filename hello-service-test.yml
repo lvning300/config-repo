@@ -1,0 +1,15 @@
+server:
+  port: 8885
+spring:
+  application:
+    name: hello-service
+  profiles:
+    active: ${profile}
+  cloud:
+    config:
+      uri: ${config.uri}
+
+book:
+  name: SpringCloudInAction
+  author: LvNing
+  version: 8884-test

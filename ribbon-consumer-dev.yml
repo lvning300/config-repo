@@ -28,3 +28,16 @@ eureka:
 logging:
   level:
     com.ln.example: debug  #com.ln.example
+
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        requestVolumeThreshold: 50
+        sleepWindowInMilliseconds: 5000
+        errorThresholdPercentage: 60
+        enabled: true
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
