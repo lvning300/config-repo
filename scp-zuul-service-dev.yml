@@ -1,0 +1,26 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: scp-zuul-service
+  profiles:
+    active: ${profile}
+  cloud:
+    config:
+      uri: ${config.uri}
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://peer1:9009/eureka/,http://peer2:9010/eureka/
+  instance:
+    prefer-ip-address: true
+    appname: scp-zuul-service
+zuul:
+  ignore-local-service: true
+  ignored-services: scp-eureka
+
+  routes:
+    hello-service: /hs/**
