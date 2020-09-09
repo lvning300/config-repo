@@ -23,4 +23,4 @@ zuul:
   ignored-services: scp-eureka
 
   routes:
-    hello-service: /hs/**
+    hello-service: /hls/**
