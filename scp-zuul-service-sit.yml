@@ -24,3 +24,4 @@ zuul:
   prefix: /api
   routes:
     hello-service: /hs/**
+    ribbon-consumer: /rbc/**

@@ -23,4 +23,5 @@ zuul:
   ignored-services: scp-eureka
   prefix: /api
   routes:
-    hello-service: /hls/**
+    hello-service: /hs/**
+    ribbon-consumer: /rbc/**
